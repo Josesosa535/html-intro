@@ -1,20 +1,141 @@
-p {
-  font-size: 20px;
-  margin-bottom: 10px;
+@import url(josjoejjninfrngnuornognorngnonronrw.com);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
 }
-a {
-  font-size: 20px;
+body {
+  background: lightblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  position: relative;
+  width: 100%;
+  max-height: 1000px;
+  min-height: 1000px;
+  background: #fff;
+  margin: 50px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+.container .left_side {
+  position: relative;
+  background: #003147;
+  padding: 40px;
+}
+.profileText {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.profileText .imgBx {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profileText .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profileText h2 {
+  color: #fff;
+  font-size: 1.5em;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+.profileText h2 span {
+  font-weight: 300;
+  font-size: 0.8em;
+}
+.contactInfo {
+  padding-top: 40px;
+}
+.title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
   margin-bottom: 20px;
 }
-ul {
-  font-size: 20px;
+.contactInfo .skills-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
-th {
-  font-size: 20px;
+.contactInfo ul {
+  position: relative;
 }
-table,
-th,
-td,
-tbody {
-  border: 1px solid black;
+.contactInfo ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
+  cursor: pointer;
+}
+.contactInfo ul li .icon {
+  display: inline-block;
+  width: 30px;
+  font-size: 18px;
+  color: #03a9f4;
+}
+.contactInfo ul li span {
+  color: #fff;
+  font-weight: 300;
+}
+.text-skills {
+  text-transform: uppercase;
+  color: #f7f7f7;
+  font-size: 1rem;
+  width: 40%;
+}
+.skills-section ul li {
+  display: flex;
+}
+#progress-text {
+  width: 200px;
+  color: #03a9f4;
+  left: 0;
+  position: relative;
+  letter-spacing: 1px;
+}
+.contactInfo .skills-section .text {
+  text-transform: uppercase;
+  font-size: 1em;
+}
+.language .text-language {
+  width: 40%;
+}
+.language ul li {
+  display: flex;
+}
+.hobbies .icons2 {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  font-size: 35px;
+  border: 2px;
+}
+.text-language {
+  color: #fff;
+  text-transform: uppercase;
+}
+.container .left_right {
+  position: relative;
+  background: #fff;
+  padding: 40px;
 }
