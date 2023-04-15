@@ -1,4 +1,4 @@
-@import url(josjoejjninfrngnuornognorngnonronrw.com);
+@import url();
 * {
   margin: 0;
   padding: 0;
@@ -20,14 +20,15 @@ body {
   background: #fff;
   margin: 50px;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: repeat(3, 1fr);
   box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
 }
 .container .left_side {
-  position: relative;
   background: #003147;
+  position: absolute;
   padding: 40px;
 }
+
 .profileText {
   position: relative;
   display: flex;
@@ -135,7 +136,16 @@ body {
   text-transform: uppercase;
 }
 .container .left_right {
-  position: relative;
+  position: absolute;
   background: #fff;
   padding: 40px;
+}
+.about {
+  margin-bottom: 0;
+}
+.title2 {
+  color: #003147;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
 }
