@@ -1,10 +1,15 @@
 @import url();
+
+:root {
+  --dark-blue: #003147;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "poppins", sans-serif;
 }
+
 body {
   background: lightblue;
   display: flex;
@@ -13,10 +18,8 @@ body {
   min-height: 100vh;
 }
 .container {
-  position: relative;
   width: 100%;
-  max-height: 1000px;
-  min-height: 1000px;
+  height: 100vh;
   background: #fff;
   margin: 50px;
   display: grid;
@@ -24,8 +27,13 @@ body {
   box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
 }
 .container .left_side {
-  background: #003147;
-  position: absolute;
+  background: var(--dark-blue);
+  grid-column: 1/2;
+  padding: 40px;
+}
+.container .right_side {
+  background: white;
+  grid-column: 2/4;
   padding: 40px;
 }
 
@@ -142,6 +150,7 @@ body {
 }
 .about {
   margin-bottom: 0;
+  text-align: justify;
 }
 .title2 {
   color: #003147;
