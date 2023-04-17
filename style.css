@@ -153,8 +153,67 @@ body {
   text-align: justify;
 }
 .title2 {
-  color: #003147;
+  color: #0d86be;
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 10px;
+  position: relative;
+}
+.title2::after {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 0.3rem;
+  background-color: #2d9cdb;
+  right: 0;
+  transform: translateY(-50%);
+  top: 50%;
+}
+.Description {
+  line-height: 1.5rem;
+  color: #718096(49, 48, 48);
+}
+
+.para {
+  line-height: 1.6rem;
+  color: #555a62;
+  font-size: 1.1rem;
+}
+.sect {
+  padding-bottom: 2rem;
+}
+.timeline {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.tl-title {
+  letter-spacing: 1px;
+  font-size: 1.3rem;
+  color: #002333;
+  text-transform: uppercase;
+}
+
+.tl-title-2 {
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  color: #2d9cdb;
+  text-transform: uppercase;
+}
+
+.tl-content {
+  border-left: 1px solid #b5b0b0;
+  padding-left: 2rem;
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+.tl-title-2::before {
+  content: "";
+  position: absolute;
+  width: 0.7rem;
+  height: 0.7rem;
+  background-color: #2d9cdb;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  left: 0;
 }
